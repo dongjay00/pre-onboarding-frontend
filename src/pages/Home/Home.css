@@ -1,0 +1,9 @@
+.Main {
+  background-color: #fff;
+}
+
+@media (min-width: 1200px) {
+  .Main {
+    padding-top: 25px;
+  }
+}

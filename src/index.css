@@ -97,6 +97,7 @@ video {
 }
 /* HTML5 display-role reset for older browsers */
 div,
+main,
 article,
 aside,
 details,
