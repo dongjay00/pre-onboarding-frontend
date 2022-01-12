@@ -39,17 +39,19 @@ function GNBMenu() {
     <ul className="Menu">
       {menuList.map((menuItem) => (
         <li key={menuItem.title}>
-          <Link to="/">{menuItem.title}</Link>
-          {menuItem.type === "New" && (
-            <span>
-              <MenuNew />
-            </span>
-          )}
-          {menuItem.type === "Beta" && (
-            <span>
-              <MenuBeta />
-            </span>
-          )}
+          <Link className="Menu_Link" to="/">
+            {menuItem.title}
+            {menuItem.type === "New" && (
+              <span>
+                <MenuNew />
+              </span>
+            )}
+            {menuItem.type === "Beta" && (
+              <span>
+                <MenuBeta />
+              </span>
+            )}
+          </Link>
         </li>
       ))}
     </ul>

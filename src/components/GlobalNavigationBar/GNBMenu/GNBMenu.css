@@ -1,0 +1,33 @@
+.Menu {
+  height: inherit;
+  text-align: center;
+  margin: 0;
+
+  display: flex;
+  justify-content: space-evenly;
+
+  font-weight: 900;
+}
+
+.Menu li {
+  height: inherit;
+  display: inline-block;
+}
+
+.Menu li .Menu_Link {
+  position: relative;
+  vertical-align: middle;
+  font-size: 14px;
+  line-height: 20px;
+  font-weight: 600;
+  padding: 15px;
+  display: inline-block;
+}
+
+.Menu li .Menu_Link > span {
+  position: absolute;
+  top: 10px;
+  right: -7px;
+  pointer-events: none;
+  font-style: normal;
+}

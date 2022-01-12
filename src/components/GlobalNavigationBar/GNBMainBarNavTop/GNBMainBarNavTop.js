@@ -1,5 +1,6 @@
 import { Link } from "react-router-dom";
 import "./GNBMainBarNavTop.css";
+import wantedLogo from "../../../assets/images/wanted_logo.png";
 
 function GNBMainBarNavTop() {
   return (
@@ -13,7 +14,7 @@ function GNBMainBarNavTop() {
           />
         </button>
         <Link to="/" className="MainBar_Logo">
-          <span>wanted</span>
+          <img src={wantedLogo} alt="wanted_logo" />
         </Link>
       </div>
     </div>

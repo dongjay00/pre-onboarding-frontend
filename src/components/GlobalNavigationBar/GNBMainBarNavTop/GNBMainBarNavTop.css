@@ -1,0 +1,25 @@
+.MainBar_Nav_Top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.MainBar_Nav_Top_Logo {
+  display: flex;
+}
+
+.MainBar_Hamburger {
+  margin-top: -2px;
+  margin-right: 13px;
+}
+
+.MainBar_Hamburger_Image {
+  width: 17px;
+  height: 14px;
+  object-fit: contain;
+  image-rendering: -webkit-optimize-contrast;
+}
+
+.MainBar_Logo {
+  display: block;
+}
