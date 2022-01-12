@@ -28,7 +28,7 @@
 
 .Aside > ul li > * {
   height: 100%;
-  padding: 0 10px;
+  padding: 0 5px;
   font-size: 14px;
   color: #333;
   font-weight: 600;
@@ -53,7 +53,6 @@
   justify-content: space-between;
   vertical-align: top;
   padding: 0;
-  margin-right: 11px;
 }
 
 .Aside > ul .ProfileBox .ProfileButton .AvatarBorder {
@@ -111,4 +110,97 @@
 
   display: inline-block;
   vertical-align: bottom;
+}
+
+.Aside > ul li .MenuButton {
+  margin-right: 10px;
+  padding-left: 10px;
+}
+
+@media (min-width: 1200px) {
+  .Aside > ul li > * {
+    padding: 0 10px;
+  }
+
+  .Aside > ul li .ProfileButton {
+    margin-right: 11px;
+  }
+
+  .Aside > ul .AsideVisibleMenu {
+    display: none;
+  }
+}
+
+@media (min-width: 992px) and (max-width: 1199px) {
+  .Aside > ul li .DashboardButton {
+    margin: 0;
+  }
+
+  .Aside > ul li .ProfileButton {
+    margin-right: 0;
+  }
+
+  .Aside > ul .AsideVisibleMenu {
+    display: none;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+  .Aside > ul li .SearchButton {
+    margin: 0;
+  }
+
+  .Aside > ul li .NotiButton {
+    margin: 0;
+  }
+
+  .Aside > ul .MdMoreVisible {
+    display: none;
+  }
+
+  .Aside > ul .ProfileBox {
+    margin-right: 0;
+  }
+
+  .Aside > ul .ProfileButton {
+    margin-right: 0;
+  }
+
+  .Aside > ul li .DashboardButton {
+    margin: 0;
+  }
+
+  .Aside > ul li .MenuButton {
+    margin-right: 0;
+  }
+}
+
+@media (max-width: 767px) {
+  .Aside > ul {
+    margin-top: -5px;
+  }
+
+  .Aside > ul li .SearchButton {
+    margin: 0;
+  }
+
+  .Aside > ul li .NotiButton {
+    margin: 0;
+  }
+
+  .Aside > ul .MdMoreVisible {
+    display: none;
+  }
+
+  .Aside > ul .ProfileBox {
+    margin-right: 0;
+  }
+
+  .Aside > ul .ProfileButton {
+    margin-right: 0;
+  }
+
+  .Aside > ul li .DashboardButton {
+    margin: 0;
+  }
 }

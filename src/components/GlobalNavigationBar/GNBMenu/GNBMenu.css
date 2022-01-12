@@ -3,15 +3,19 @@
   text-align: center;
   margin: 0;
 
-  display: flex;
-  justify-content: space-evenly;
-
   font-weight: 900;
 }
 
 .Menu li {
   height: inherit;
   display: inline-block;
+}
+
+.Menu li:after {
+  height: 100%;
+  content: "";
+  display: inline-block;
+  vertical-align: middle;
 }
 
 .Menu li .Menu_Link {
@@ -24,10 +28,91 @@
   display: inline-block;
 }
 
+.Menu li.XsHomeButton .Menu_Link {
+  padding-left: 20px;
+}
+
 .Menu li .Menu_Link > span {
   position: absolute;
   top: 10px;
   right: -7px;
   pointer-events: none;
   font-style: normal;
+}
+
+.Menu .SelectedNav {
+  box-shadow: inset 0 -2px #258bf7;
+}
+
+@media (min-width: 1200px) {
+  .Menu .XsOnly {
+    display: none;
+  }
+}
+
+@media (min-width: 992px) and (max-width: 1199px) {
+  .Menu {
+    display: flex;
+    flex: 1 1;
+    justify-content: space-evenly;
+  }
+
+  .Menu .XsOnly {
+    display: none;
+  }
+
+  .Menu li .Menu_Link {
+    font-size: 13px;
+    padding: 15px 0;
+  }
+
+  .Menu li .Menu_Link > span {
+    right: -20px;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+  .Menu {
+    justify-content: flex-start;
+    margin-right: 30px;
+  }
+
+  .Menu .XsOnly {
+    display: none;
+  }
+
+  .Menu li .Menu_Link {
+    padding: 11px 10px 19px;
+    font-size: 13px;
+  }
+
+  .Menu li .Menu_Link > span {
+    right: -8px;
+    top: 4px;
+  }
+}
+
+@media (max-width: 767px) {
+  .Menu {
+    text-align: left;
+  }
+
+  .Menu .SmMoreVisible {
+    display: none;
+  }
+
+  .Menu li .Menu_Link {
+    padding: 11px 10px 19px;
+  }
+}
+
+@media (max-width: 320px) {
+  .Menu li .Menu_Link {
+    font-size: 13px;
+    padding: 15px 8px;
+  }
+
+  .Menu li.XsHomeButton .Menu_Link {
+    padding: 15px 8px 15px 20px;
+  }
 }

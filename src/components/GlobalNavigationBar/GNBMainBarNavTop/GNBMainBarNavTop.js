@@ -17,6 +17,9 @@ function GNBMainBarNavTop() {
           <img src={wantedLogo} alt="wanted_logo" />
         </Link>
       </div>
+      <button id="GNBSignupBtn" type="button">
+        회원가입하기
+      </button>
     </div>
   );
 }

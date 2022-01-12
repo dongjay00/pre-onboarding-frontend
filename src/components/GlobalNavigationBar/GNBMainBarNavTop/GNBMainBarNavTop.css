@@ -1,3 +1,7 @@
+#GNBSignupBtn {
+  display: none;
+}
+
 .MainBar_Nav_Top {
   display: flex;
   justify-content: space-between;
@@ -22,4 +26,25 @@
 
 .MainBar_Logo {
   display: block;
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+  .MainBar_Nav_Top {
+    padding: 15px 0;
+    height: 60px;
+    width: 100%;
+  }
+
+  .MainBar_Logo {
+    position: relative;
+    float: left;
+  }
+}
+
+@media (max-width: 767px) {
+  .MainBar_Nav_Top {
+    height: 60px;
+    width: 100%;
+    padding: 15px 20px;
+  }
 }

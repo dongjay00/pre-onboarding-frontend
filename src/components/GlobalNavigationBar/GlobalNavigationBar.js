@@ -5,15 +5,18 @@ import GNBAside from "./GNBAside/GNBAside";
 
 function GlobalNavigationBar() {
   return (
-    <div className="NavBar">
-      <div className="MainBar">
-        <nav className="MainBar_Nav">
-          <GNBMainBarNavTop />
-          <GNBMenu />
-          <GNBAside />
-        </nav>
+    <>
+      <div className="NavBar">
+        <div className="MainBar">
+          <nav className="MainBar_Nav">
+            <GNBMainBarNavTop />
+            <GNBMenu />
+            <GNBAside />
+          </nav>
+        </div>
       </div>
-    </div>
+      <div className="Padding"></div>
+    </>
   );
 }
 
