@@ -4,12 +4,12 @@ import Carousel from "../../components/Carousel/Carousel";
 
 function Home() {
   return (
-    <div className="Home">
+    <>
       <GlobalNavigationBar />
       <main className="Main">
         <Carousel />
       </main>
-    </div>
+    </>
   );
 }
 

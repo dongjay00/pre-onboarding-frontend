@@ -1,0 +1,56 @@
+.TopBanner {
+  position: relative;
+  overflow: hidden;
+}
+
+.SlickSlider {
+  position: relative;
+  display: block;
+  box-sizing: border-box;
+  user-select: none;
+  touch-action: pan-y;
+  -webkit-tap-highlight-color: transparent;
+
+  margin-bottom: 30px;
+}
+
+.TopBanner .SlickSlider {
+  margin-bottom: 0;
+}
+
+.SlickList {
+  position: relative;
+  overflow: hidden;
+  display: block;
+  margin: 0;
+  padding: 0;
+
+  padding: 0px 50px;
+}
+
+.SlickTrack {
+  position: relative;
+  left: 0;
+  top: 0;
+  display: block;
+}
+
+.SlickTrack:before,
+.SlickTrack:after {
+  content: "";
+  display: table;
+}
+
+.SlickTrack:after {
+  clear: both;
+}
+
+@media (min-width: 1200px) {
+  .TopBanner {
+    height: auto;
+  }
+
+  .SlickList {
+    padding: 0px 40px;
+  }
+}

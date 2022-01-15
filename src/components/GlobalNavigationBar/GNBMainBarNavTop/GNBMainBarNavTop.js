@@ -2,14 +2,19 @@ import { Link } from "react-router-dom";
 import "./GNBMainBarNavTop.css";
 import wantedLogo from "../../../assets/images/wanted_logo.png";
 
+const menuIcon = {
+  imageUrl: "https://static.wanted.co.kr/images/icon-menu.png",
+  imageAlt: "Hamburger",
+};
+
 function GNBMainBarNavTop() {
   return (
     <div className="MainBar_Nav_Top">
       <div className="MainBar_Nav_Top_Logo">
         <button className="MainBar_Hamburger">
           <img
-            src="https://static.wanted.co.kr/images/icon-menu.png"
-            alt="Hamburger"
+            src={menuIcon.imageUrl}
+            alt={menuIcon.imageAlt}
             className="MainBar_Hamburger_Image"
           />
         </button>

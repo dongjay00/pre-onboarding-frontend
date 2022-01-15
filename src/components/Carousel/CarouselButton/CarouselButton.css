@@ -1,0 +1,44 @@
+.TopBanner_Arrow {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  top: 120px;
+  width: 30px;
+  height: 60px;
+  opacity: 0.5;
+  border-radius: 15px;
+  background-color: #fff;
+  font-size: 16px;
+}
+
+.SvgIcon {
+  width: 100%;
+  display: flex;
+  align-items: inherit;
+  justify-content: inherit;
+}
+
+.SvgIcon_SvgIcon__root__svg__DKYBi {
+  user-select: none;
+  width: 1em;
+  height: 1em;
+  display: inline-block;
+  fill: currentColor;
+  flex-shrink: 0;
+  font-size: inherit;
+}
+
+.TopBanner_NextArrow {
+  right: calc((100% - 1200px) / 2);
+}
+
+.TopBanner_PrevArrow {
+  left: calc((100% - 1210px) / 2);
+}
+
+@media (max-width: 1200px) {
+  .TopBanner_Arrow {
+    display: none;
+  }
+}
