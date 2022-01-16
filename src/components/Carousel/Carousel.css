@@ -1,6 +1,8 @@
 .TopBanner {
   position: relative;
   overflow: hidden;
+  width: 100%;
+  height: 300px;
 }
 
 .SlickSlider {
@@ -32,7 +34,10 @@
   position: relative;
   left: 0;
   top: 0;
-  display: block;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 300px;
 }
 
 .SlickTrack:before,
@@ -47,7 +52,7 @@
 
 @media (min-width: 1200px) {
   .TopBanner {
-    height: auto;
+    height: 300px;
   }
 
   .SlickList {

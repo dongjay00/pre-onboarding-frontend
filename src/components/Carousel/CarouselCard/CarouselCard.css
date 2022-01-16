@@ -4,6 +4,7 @@
   min-height: 1px;
   display: block;
   position: relative;
+  min-width: 100%;
 }
 
 .SlickSlide > div {
@@ -135,7 +136,8 @@
   .SlickSlide {
     padding: 0 12px;
     box-sizing: content-box;
-    width: 1060px;
+    max-width: 1060px;
+    min-width: 1060px;
   }
 
   .SlickSlide > div {

@@ -9,12 +9,14 @@ function Carousel() {
       <div className="SlickSlider SlickInitialized">
         <div className="SlickList">
           <div className="SlickTrack">
-            {carouselCardList.map((carouselCardItem) => (
-              <CarouselCard
-                key={carouselCardItem.title}
-                carouselCardItem={carouselCardItem}
-              />
-            ))}
+            {carouselCardList.map((carouselCardItem) => {
+              return (
+                <CarouselCard
+                  key={carouselCardItem.id}
+                  carouselCardItem={carouselCardItem}
+                />
+              );
+            })}
           </div>
         </div>
       </div>
