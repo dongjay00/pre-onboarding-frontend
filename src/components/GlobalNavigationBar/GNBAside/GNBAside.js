@@ -3,6 +3,7 @@ import "./GNBAside.css";
 import { ReactComponent as SearchButton } from "../../../assets/icons/search-button.svg";
 import { ReactComponent as NotiButton } from "../../../assets/icons/noti-button.svg";
 import { ReactComponent as MenuButton } from "../../../assets/icons/menu-button.svg";
+import { ReactComponent as NewBadge } from "../../../assets/icons/new-badge.svg";
 import { asideList } from "../../../libs/GlobalNavigationBar";
 
 const avatarImage = {
@@ -11,6 +12,8 @@ const avatarImage = {
   defaultImageUrl: "https://static.wanted.co.kr/images/profile_default.png",
 };
 const DASH_BOARD_BUTTON = "DashboardButton";
+const NOTI_BUTTON = "NotiButton";
+const PROFILE_BUTTON = "ProfileButton";
 
 function ProfileButton() {
   return (
@@ -44,9 +47,19 @@ function GNBAside() {
                   기업 서비스
                 </Link>
               ) : (
-                <button type="button" className={asideItem.btnClassName}>
-                  <AsideComponent />
-                </button>
+                <>
+                  <button type="button" className={asideItem.btnClassName}>
+                    <AsideComponent />
+                  </button>
+                  {asideItem.btnClassName === NOTI_BUTTON ||
+                  asideItem.btnClassName === PROFILE_BUTTON ? (
+                    <span className={`Badge ${asideItem.btnClassName}Alarm`}>
+                      <NewBadge />
+                    </span>
+                  ) : (
+                    <></>
+                  )}
+                </>
               )}
             </li>
           );

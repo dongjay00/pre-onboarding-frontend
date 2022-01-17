@@ -117,6 +117,39 @@
   padding-left: 10px;
 }
 
+.Badge {
+  display: inline-flex;
+  width: 16px;
+  height: 16px;
+  background: #36f;
+  align-items: center;
+  justify-content: center;
+  border-radius: 5px;
+}
+
+.Aside > ul li > .Badge {
+  position: absolute;
+  top: -2px;
+  left: 22px;
+  padding: 0 !important;
+}
+
+.Aside > ul li > .NotiButtonAlarm {
+  top: -4px;
+  left: 24px;
+  background-color: rgb(51, 102, 255);
+  width: 13px;
+  height: 13px;
+}
+
+.Aside > ul li > .ProfileButtonAlarm {
+  top: -2px;
+  left: 24px;
+  background-color: rgb(51, 102, 255);
+  width: 13px;
+  height: 13px;
+}
+
 @media (min-width: 1200px) {
   .Aside > ul li > * {
     padding: 0 10px;
