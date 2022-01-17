@@ -41,13 +41,9 @@ function CarouselCardInformation({ carouselCardItem }) {
 
 function CarouselCard({ carouselCardItem }) {
   return (
-    <div className="SlickSlide SlickCloned">
-      <div>
-        <div>
-          <CarouselCardImage carouselCardItem={carouselCardItem} />
-          <CarouselCardInformation carouselCardItem={carouselCardItem} />
-        </div>
-      </div>
+    <div>
+      <CarouselCardImage carouselCardItem={carouselCardItem} />
+      <CarouselCardInformation carouselCardItem={carouselCardItem} />
     </div>
   );
 }
