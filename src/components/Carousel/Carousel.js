@@ -5,7 +5,7 @@ import { carouselCardList } from "../../libs/Carousel";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import Slider from "react-slick";
-import { useState, useEffect } from "react";
+import { useState, useEffect, useCallback } from "react";
 
 const arrows = {
   NEXT_ARROW: "NextArrow",
@@ -56,7 +56,7 @@ function Carousel() {
     prevArrow: <PrevArrow />,
   });
 
-  const resizingHandler = () => {
+  const resizingHandler = useCallback(() => {
     if (window.innerWidth <= 1200) {
       setSettings({
         ...settings,
@@ -70,22 +70,14 @@ function Carousel() {
         variableWidth: true,
       });
     }
-  };
+  }, [CENTER_PADDING_LARGE, CENTER_PADDING_SMALL, settings]);
 
   useEffect(() => {
-    if (window.innerWidth <= 1200) {
-      setSettings({
-        ...settings,
-        centerPadding: CENTER_PADDING_SMALL,
-        variableWidth: false,
-      });
-    }
-
     window.addEventListener("resize", resizingHandler);
     return () => {
       window.removeEventListener("resize", resizingHandler);
     };
-  }, []);
+  }, [resizingHandler]);
 
   return (
     <div className="TopBanner">
