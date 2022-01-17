@@ -55,13 +55,4 @@ const carouselCardList = [
   },
 ];
 
-const btnList = [
-  {
-    arrowType: "NextArrow",
-  },
-  {
-    arrowType: "PrevArrow",
-  },
-];
-
-export { carouselCardList, btnList };
+export { carouselCardList };
